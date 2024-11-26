@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt=br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Itim&display=swap"
+      rel="stylesheet"
+    />
+    <title>Lista de contatos</title>
+  </head>
+  <body>
+    <header>Lista de contatos</header>
+    <section>
+      <form id="registre">
+        <label for="nome_contato">Nome:</label>
+        <input
+          type="text"
+          name="nome_contato"
+          id="nome_contato"
+          placeholder="Digite seu nome"
+        />
+
+        <label for="numero">Número:</label>
+        <input
+          type="number"
+          name="numero"
+          id="numero"
+          placeholder="(xx) xxxx-xxxx"
+        />
+
+        <label for="email">E-mail:</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Digite seu E-mail"
+        />
+
+        <button id="btnCadastra">Cadastrar</button>
+      </form>
+
+      <div id="meuModal" class="modal">
+        <div id="contentModal" class="modal-content">
+          <h3 id="modalLista"></h3>
+        </div>
+      </div>
+
+      <div id="TodosNumeros">
+        <div id="listaDeTodosNumeros"></div>
+      </div>
+    </section>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
